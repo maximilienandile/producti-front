@@ -3,7 +3,9 @@
     <br>
     <b-jumbotron header="Producti" lead="Welcome to Producti frontend">
 
-      <b-button variant="primary" :to="{name:'ALL_PRODUCTS'}">Get All Products</b-button>
+      <b-button class="mt-2" variant="primary" :to="{name:'ALL_PRODUCTS'}">Get All Products</b-button> <br>
+      <b-button class="mt-2" variant="primary" :to="{name:'BY_ID'}">Get Product By Id</b-button> <br>
+      <b-button class="mt-2" variant="primary" :to="{name:'SEARCH'}">Search Product</b-button> <br>
     </b-jumbotron>
 
 

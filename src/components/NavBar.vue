@@ -1,24 +1,17 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <router-link class="navbar-brand" href="#"  :to="{name:'HOME'}">Producti</router-link>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
 
-        <li class="nav-item">
-          <router-link class="nav-link" :to="{name:'ALL_PRODUCTS'}">Get All Products</router-link>
-        </li>
-        <li class="nav-item">
-          <router-link class="nav-link" :to="{name:'BY_ID'}">Get product By Id</router-link>
-        </li>
-        <li class="nav-item">
-          <router-link class="nav-link" :to="{name:'SEARCH'}">Search Product</router-link>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <b-navbar toggleable="lg" type="dark" variant="info">
+    <b-navbar-brand :to="{name:'HOME'}">Producti</b-navbar-brand>
+
+    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+    <b-collapse id="nav-collapse" is-nav>
+      <b-navbar-nav>
+        <b-nav-item :to="{name:'ALL_PRODUCTS'}">Get All Products</b-nav-item>
+        <b-nav-item :to="{name:'BY_ID'}" >Get Product By Id</b-nav-item>
+        <b-nav-item :to="{name:'SEARCH'}" >Search</b-nav-item>
+      </b-navbar-nav>
+    </b-collapse>
+  </b-navbar>
 </template>
 
 <script>

@@ -1,5 +1,9 @@
 # producti-front
 
+This is a simple Frontend application written in Vue.
+
+It is intended to show how the API hosted on https://github.com/maximilienandile/producti works.
+
 ## Project setup
 ```
 npm install
